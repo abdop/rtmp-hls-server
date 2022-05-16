@@ -27,7 +27,7 @@ Current Image is built using:
  * Nginx-rtmp-module 1.2.1 (compiled from source)
  * FFmpeg 4.2.1 (compiled from source)
 
-This image was inspired by similar docker images from [alqutami] (https://hub.docker.com/r/alqutami/rtmp-hls) [tiangolo](https://hub.docker.com/r/tiangolo/nginx-rtmp/) and [alfg](https://hub.docker.com/r/alfg/nginx-rtmp/). It has small build size, adds support for HTTP-based streams and adaptive streaming using FFmpeg.
+This image was inspired by similar docker images from [alqutami](https://hub.docker.com/r/alqutami/rtmp-hls), [tiangolo](https://hub.docker.com/r/tiangolo/nginx-rtmp/) and [alfg](https://hub.docker.com/r/alfg/nginx-rtmp/). It has small build size, adds support for HTTP-based streams and adaptive streaming using FFmpeg.
 
 ## Usage
 
