@@ -54,6 +54,12 @@ where `custom.conf` is the new conf file for Nginx.
 	```
 	where `<stream_key>` is any stream key you specify.
 
+ * **Configure [DJI Drone GO 4](https://www.dji.com/downloads/djiapp/dji-go-4) to stream content:** <br />
+Go to tree dot ... > Choose streaming platform:
+   * Click on rtmp.
+   * Enter Server URL : `rtmp://<server ip>:1935/live/drone1`. 
+   * `drone1` is the Stream key. You can specifie any Stream key you want, however provided video players assume stream key is `drone1`
+
  * **Configure [OBS](https://obsproject.com/) to stream content:** <br />
 Go to Settings > Stream, choose the following settings:
    * Service: Custom Streaming Server.
