@@ -27,7 +27,7 @@ Current Image is built using:
  * Nginx-rtmp-module 1.2.1 (compiled from source)
  * FFmpeg 4.2.1 (compiled from source)
 
-This image was inspired by similar docker images from [tiangolo](https://hub.docker.com/r/tiangolo/nginx-rtmp/) and [alfg](https://hub.docker.com/r/alfg/nginx-rtmp/). It has small build size, adds support for HTTP-based streams and adaptive streaming using FFmpeg.
+This image was inspired by similar docker images from [alqutami] (https://hub.docker.com/r/alqutami/rtmp-hls) [tiangolo](https://hub.docker.com/r/tiangolo/nginx-rtmp/) and [alfg](https://hub.docker.com/r/alfg/nginx-rtmp/). It has small build size, adds support for HTTP-based streams and adaptive streaming using FFmpeg.
 
 ## Usage
 
@@ -58,7 +58,7 @@ where `custom.conf` is the new conf file for Nginx.
 Go to Settings > Stream, choose the following settings:
    * Service: Custom Streaming Server.
    * Server: `rtmp://<server ip>:1935/live`. 
-   * Stream key: anything you want, however provided video players assume stream key is `test`
+   * Stream key: anything you want, however provided video players assume stream key is `drone1`
 
 ### To view the stream
  * **Using [VLC](https://www.videolan.org/vlc/index.html):**
@@ -72,7 +72,7 @@ Go to Settings > Stream, choose the following settings:
 	 * Click Play.
 
 * **Using provided web players:** <br/>
-The provided demo players assume the stream-key is called `test` and the player is opened in localhost. 
+The provided demo players assume the stream-key is called `drone1` and the player is opened in localhost. 
 	* To play RTMP content (requires Flash): `http://localhost:8080/players/rtmp.html` 
 	* To play HLS content: `http://localhost:8080/players/hls.html`
 	* To play HLS content using hls.js library: `http://localhost:8080/players/hls_hlsjs.html`
@@ -81,7 +81,7 @@ The provided demo players assume the stream-key is called `test` and the player 
 
 	**Notes:** 
 
-	* These web players are hardcoded to play stream key "test" at localhost.
+	* These web players are hardcoded to play stream key "drone1" at localhost.
 	* To change the stream source for these players. Download the html files and modify the `src` attribute in the video tag in the html file. You can then mount the modified files to the container as follows:
 		```
 		docker run -d -p 1935:1935 -p 8080:8080 -v custom_players:/usr/local/nginx/html/players alqutami/rtmp-hls

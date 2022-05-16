@@ -112,6 +112,9 @@ COPY conf/nginx.conf /etc/nginx/nginx.conf
 # Copy  html players to container
 COPY players /usr/local/nginx/html/players
 
+# Create a Direcotory for recording
+RUN mkdir -p /tmp/record && chown nobody:nogroup /tmp/record
+
 EXPOSE 1935
 EXPOSE 8080
 

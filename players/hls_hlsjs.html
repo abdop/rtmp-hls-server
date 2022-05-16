@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>HLS streaming</title>
+    <title>HLS streaming Video Drone 1</title>
 
     <link rel="stylesheet" href="/static/bootstrap.min.css">
     <link rel="stylesheet" href="/static/bootstrap-theme.min.css">
@@ -13,7 +13,7 @@
 
 	<body>
 
-		<h1>Test HLS Player (avec hls.js)</h1>
+		<h1>Drone 1 HLS Player (avec hls.js)</h1>
 
 		<div class="well">
 		<div class="embed-responsive embed-responsive-16by9">
@@ -25,7 +25,7 @@
 			if(Hls.isSupported()) {
 				var video = document.getElementById('video');
 				var hls = new Hls();
-				hls.loadSource('/hls/test.m3u8');
+				hls.loadSource('/hls/drone1.m3u8');
 				hls.attachMedia(video);
 				hls.on(Hls.Events.MANIFEST_PARSED,function() {
 				  video.play();
