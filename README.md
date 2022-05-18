@@ -87,7 +87,7 @@ In the actual configurations this link can be run without the need to be connect
 	tent: `http://localhost:8080/players/hls.html`
 	* To play HLS content using hls.js library: `http://localhost:8080/players/hls_hlsjs.html`
 
-* **Using provided others web players:** <br/>
+* **Using others provided web players:** <br/>
 Other players exist, until now they don't work with DJI drone and need internet to download library.
 	* To play RTMP content (requires Flash): `http://localhost:8080/players/rtmp.html` 
 	* To play DASH content: `http://localhost:8080/players/dash.html`
