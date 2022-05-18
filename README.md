@@ -82,9 +82,12 @@ Go to Settings > Stream, choose the following settings:
 
 * **Using provided web players:** <br/>
 The provided demo players assume the stream-key is called `drone1` and the player is opened in localhost. 
-	* To play RTMP content (requires Flash): `http://localhost:8080/players/rtmp.html` 
+In the actual configurations this link can be run without the need to be connected to internet.
 	* To play HLS content: `http://localhost:8080/players/hls.html`
 	* To play HLS content using hls.js library: `http://localhost:8080/players/hls_hlsjs.html`
+
+Other players exist, until now they don't work well with DJI drone and need internet to download library.
+	* To play RTMP content (requires Flash): `http://localhost:8080/players/rtmp.html` 
 	* To play DASH content: `http://localhost:8080/players/dash.html`
 	* To play RTMP and HLS contents on the same page: `http://localhost:8080/players/rtmp_hls.html`
 
@@ -101,6 +104,6 @@ The provided demo players assume the stream-key is called `drone1` and the playe
 Released under MIT license.
 
 ## More info
- * **GitHub repo**: <https://github.com/TareqAlqutami/rtmp-hls-server.git>
+ * **GitHub repo**: <https://github.com/abdop/rtmp-hls-server.git>
 
- * **Docker Hub image**: <https://hub.docker.com/r/alqutami/rtmp-hls>
+ * **Docker Hub image from Alqutami**: <https://hub.docker.com/r/alqutami/rtmp-hls>
