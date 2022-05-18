@@ -32,18 +32,21 @@ This image was inspired by similar docker images from [alqutami](https://hub.doc
 ## Usage
 
 ### To run the server
-```
-docker run -d -p 1935:1935 -p 8080:8080 alqutami/rtmp-hls
-```
 
-For Alpine-based Image use:
+Docker must be installed, go to directory where the Dockerfile is located and first build the container image:
 ```
-docker run -d -p 1935:1935 -p 8080:8080 alqutami/rtmp-hls:latest-alpine
+docker build -t rtmp-hls .
+```
+Now we have build an image with the name of `rtmp-hls`
+
+To run a container using this image:
+```
+docker run -d -p 1935:1935 -p 8080:8080 rtmp-hls
 ```
 
 To run with custom conf file:
 ```
-docker run -d -p 1935:1935 -p 8080:8080 -v custom.conf:/etc/nginx/nginx.conf alqutami/rtmp-hls
+docker run -d -p 1935:1935 -p 8080:8080 -v custom.conf:/etc/nginx/nginx.conf rtmp-hls
 ```
 where `custom.conf` is the new conf file for Nginx.
 
