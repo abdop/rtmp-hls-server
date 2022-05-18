@@ -1,6 +1,6 @@
 ##### Building stage #####
 FROM nvidia/cuda:11.1-devel-ubuntu20.04 as builder
-MAINTAINER Kieran Harkin <kieran+git@harkin.me>
+LABEL org.opencontainers.image.authors="kieran+git@harkin.me"
 
 # Versions of nginx, rtmp-module and ffmpeg 
 ENV  TZ=Europe/Dublin
