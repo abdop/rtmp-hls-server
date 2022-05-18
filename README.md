@@ -93,7 +93,7 @@ The provided demo players assume the stream-key is called `drone1` and the playe
 	* These web players are hardcoded to play stream key "drone1" at localhost.
 	* To change the stream source for these players. Download the html files and modify the `src` attribute in the video tag in the html file. You can then mount the modified files to the container as follows:
 		```
-		docker run -d -p 1935:1935 -p 8080:8080 -v custom_players:/usr/local/nginx/html/players alqutami/rtmp-hls
+		docker run -d -p 1935:1935 -p 8080:8080 -v custom_players:/usr/local/nginx/html/players rtmp-hls
 		```
 		where `custom_players` is the directory holding the modified html files.
 
